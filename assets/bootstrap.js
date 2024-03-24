@@ -1,5 +1,8 @@
-import { startStimulusApp } from '@symfony/stimulus-bundle';
+import { createApp } from 'vue';
+import App from './vue/App.vue';
+import { router } from './lib/router';
 
-const app = startStimulusApp();
-// register any custom, 3rd party controllers here
-// app.register('some_controller_name', SomeImportedController);
+const app = createApp(App, {})
+    .use(router)
+    .mount('#app')
+;
