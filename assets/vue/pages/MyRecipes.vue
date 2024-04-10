@@ -1,11 +1,11 @@
-<script setup lang="ts" >
+<script setup lang="ts">
 import { useHead } from "unhead";
 useHead({
-	title: '404',
+	title: 'Recipes',
 });
 
 </script>
 
 <template>
-	<h3>404. Page not found</h3>
+	<h3>My recipes page</h3>
 </template>

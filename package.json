@@ -31,9 +31,11 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@unhead/vue": "^1.9.4",
         "fork-ts-checker-webpack-plugin": "^9.0.2",
         "ts-loader": "^9.5.1",
         "typescript": "^5.4.2",
+        "unhead": "^1.9.4",
         "vue-loader": "^17.4.2",
         "vue-router": "^4.3.0"
     }

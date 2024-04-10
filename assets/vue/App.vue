@@ -1,18 +1,14 @@
 <script setup lang="ts">
-	import { ref } from 'vue';
-
-	const count = ref(0);
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-	<button @click="count++">Click: {{ count }}</button>
-	<div class="text-3xl font-bold underline">TailwindCss works!</div>
-	<nav class="flex flex-col">
-		<router-link :to="{ name: 'home' }">HomePage</router-link>
-		<router-link :to="{ name: 'about' }">About</router-link>
-		<router-link :to="{ name: 'page-not-found' }">PageNotFound</router-link>
-	</nav>
-	<div class="bg-amber-300 p-3 m-auto">
-		<router-view />
+	<div class="flex flex-col h-full">
+		<Header class="px-7"/>
+		<main class="flex-1 px-7">
+			<router-view/>
+		</main>
+		<Footer class="px-7"/>
 	</div>
 </template>

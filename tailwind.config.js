@@ -7,7 +7,11 @@ module.exports = {
     "./assets/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
