@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import App from './vue/App.vue';
-import { router } from './lib/router';
+import App from "Vue/App.vue";
+import { router } from 'Lib/Router';
 import { createHead } from "unhead";
 
 const app = createApp(App, {})

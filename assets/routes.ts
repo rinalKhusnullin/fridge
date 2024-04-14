@@ -1,11 +1,11 @@
 import * as VueRouter from "vue-router";
-import MyRecipes from "./vue/pages/MyRecipes.vue";
-import SharedRecipes from "./vue/pages/SharedRecipes.vue";
-import PageNotFound from "./vue/pages/PageNotFound.vue";
-import MyProducts from "./vue/pages/MyProducts.vue";
-import Registration from "./vue/pages/Registration.vue";
-import Login from "./vue/pages/Login.vue";
-import Welcome from "./vue/pages/Welcome.vue";
+import Welcome from "Pages/Welcome.vue";
+import Login from "Pages/Login.vue";
+import Registration from "Pages/Registration.vue";
+import MyProducts from "Pages/MyProducts.vue";
+import MyRecipes from "Pages/MyRecipes.vue";
+import SharedRecipes from "Pages/SharedRecipes.vue";
+import PageNotFound from "Pages/PageNotFound.vue";
 
 export const routes: VueRouter.RouteRecordRaw[] = [];
 

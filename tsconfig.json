@@ -1,10 +1,38 @@
 {
   "extends": [
     "@tsconfig/node18/tsconfig.json",
-    "@vue/tsconfig/tsconfig.json",
+    "@vue/tsconfig/tsconfig.json"
   ],
   "compilerOptions": {
-    "types": ["node"],
-    "lib": ["dom"],
-  },
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "Model/*": [
+        "assets/lib/Model/*"
+      ],
+      "Repository/*": [
+        "assets/lib/Repository/*"
+      ],
+      "Lib/*": [
+        "assets/lib/*"
+      ],
+      "Pages/*": [
+        "assets/vue/pages/*"
+      ],
+      "Components/*": [
+        "assets/vue/components/*"
+      ],
+      "Vue/*": [
+        "assets/vue/*"
+      ],
+      "@/*": [
+        "assets/*"
+      ]
+    }
+  }
 }

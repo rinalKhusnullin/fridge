@@ -1,4 +1,6 @@
 const Encore = require('@symfony/webpack-encore');
+const path = require("node:path");
+const {  resolveTsAliases } = require("resolve-ts-aliases");
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -73,6 +75,7 @@ Encore
     //.autoProvidejQuery()
     .enableStimulusBridge('assets/controllers.json')
     .enablePostCssLoader()
+    .addAliases(resolveTsAliases(path.resolve(__dirname, './tsconfig.json')))
 ;
 
 module.exports = Encore.getWebpackConfig();

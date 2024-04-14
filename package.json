@@ -32,7 +32,9 @@
     },
     "dependencies": {
         "@unhead/vue": "^1.9.4",
+        "axios": "^1.6.8",
         "fork-ts-checker-webpack-plugin": "^9.0.2",
+        "resolve-ts-aliases": "^1.0.1",
         "ts-loader": "^9.5.1",
         "typescript": "^5.4.2",
         "unhead": "^1.9.4",
